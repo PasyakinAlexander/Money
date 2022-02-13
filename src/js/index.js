@@ -4,6 +4,37 @@ function Core()
 {
     SetTabSwitcher();
     SetModal();
+    InitOwlCarousel();
+}
+
+function InitOwlCarousel()
+{
+    var carousel_maintenance = $(".carousel-history").owlCarousel(
+        {
+            items: 1,
+            loop: true,
+            dots: false,
+            autoplay: true,
+            smartSpeed: 1000
+        }
+    );
+
+    var carousel_maintenance = $(".carousel-offers").owlCarousel(
+        {
+            items: 3,
+            loop: true,
+            dots: false,
+            autoplay: true,
+            smartSpeed: 1000
+        }
+    );
+
+    $('.btn-next.btn-carousel-history').click(function() {
+        carousel_maintenance.trigger('next.owl.carousel');
+    });
+    $('.btn-prev.btn-carousel-history').click(function() {
+        carousel_maintenance.trigger('prev.owl.carousel', [1000]);
+    });
 }
 
 function SetTabSwitcher()

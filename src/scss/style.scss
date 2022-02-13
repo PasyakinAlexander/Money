@@ -2,7 +2,8 @@ body
 {
     margin: 0;
     color: #000;
-    background: #fff;
+    background: #ececec;
+    font-family: "Raleway";
 }
 
 body.lock
@@ -27,10 +28,912 @@ button, input, select
     outline: none;
 }
 
-button, a
+button, a, .btn
 {
     cursor: pointer;
 }
 
+.btn{
+    width: 220px;
+    height: 55px;
+    border: 2px solid #55d94a;
+    text-align: center;
+    padding: 10px;
+    font-size: 22px;
+}
+
+.btn:hover{
+    background: linear-gradient(#84e17c, #55d94a);
+    border: none;
+    padding: 12px;
+    color: white;
+}
+
+.btn.btn-bg{
+    background: linear-gradient(#84e17c, #55d94a);
+    border: none;
+    padding: 12px;
+    color: white;
+}
+
+header{
+    background: url(../images/backgrounds/header-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    color: #ececec;
+    padding-top: 50px;
+    padding-bottom: 200px;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts{
+        display: flex;
+        justify-content: flex-end;
+
+        .phone{
+            position: relative;
+            padding-left: 30px;
+            font-size: 23px;
+            padding-bottom: 7px;
+        }
+
+        .phone::before{
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-image: url(../images/icons/phone.png);
+            position: absolute;
+            left: 0;
+            vertical-align: middle;
+            top: 9px;
+        }
+
+        .phone:hover{
+            border-bottom: 2px solid #55d94a;
+            padding-bottom: 5px;
+        }
+
+        .social{
+            display: flex;
+            margin-left: 30px;
+
+            .vk, .facebook, .instagram, .youtube, .telegram{
+                width: 23px;
+                height: 23px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                margin-left: 20px;
+                filter: invert(100%);
+            }
+
+            .vk{
+                background-image: url(../images/icons/vk-social-network-logo.png);
+            }
+
+            .facebook{
+                background-image: url(../images/icons/facebook-app-symbol.png);
+            }
+
+            .instagram{
+                background-image: url(../images/icons/instagram.png);
+            }
+
+            .youtube{
+                background-image: url(../images/icons/youtube.png);
+            }
+
+            .telegram{
+                background-image: url(../images/icons/telegram.png);
+            }
+        }
+    }
+
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .menu-btn{
+            width: 23px;
+            height: 23px;
+            background-image: url(../images/icons/menu-btn.png);
+        }
+
+        .nav{
+            display: flex;
+
+            a{
+                margin-left: 15px;
+                margin-right: 15px;
+                font-size: 22px;
+            }
+        }
+
+        .btns{
+            display: flex;
+
+            .personal-account{
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .descr{
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        margin-top: 150px;
+        color: white;
+
+        h1{
+            font-size: 118px;
+            margin: 0;
+            font-weight: 400;
+            position: relative;
+            padding-bottom: 40px;
+            font-family: "Micra";
+        }
+
+        h1:before{
+            content: "";
+            background: #55d94a;
+            height: 10px;
+            width: 625px;
+            position: absolute;
+            bottom: 0;
+        }
+
+        h2{
+            margin: 0;
+            font-size: 34px;
+            font-weight: 300;
+            margin-top: 30px;
+        }
+
+        .play-video{
+            display: flex;
+            margin-top: 100px;
+            align-items: center;
+
+            .btn{
+                width: 150px;
+                height: 150px;
+                background-image: url(../images/icons/play.png);
+                border: none;
+            }
+
+            .text{
+                display: flex;
+                flex-direction: column;
+                font-size: 22px;
+                text-align: center;
+                font-weight: 300;
+                margin-left: 20px;
+
+                .see-video{
+                    font-size: 18px;
+                    color: #55d94a;
+                    font-weight: 500;
+                    border-top: 2px solid #55d94a;
+                }
+            }
+        }
+    }
+}
+
+.running-line{
+    font-size: 50px;
+    font-family: "Micra";
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.federal-championship{
+
+    .content{
+        background-image: url(../images/backgrounds/federalChempionship-background.jpg);
+        background-repeat: no-repeat;
+        background-position: right;
+        padding-right: 30%;
+    }
+
+    h2{
+        font-family: "Micra";
+        font-size: 44px;
+        position: relative;
+        padding-bottom: 40px;
+        margin: 0;
+    }
+
+    h2:before{
+        content: "";
+        background: #55d94a;
+        height: 6px;
+        width: 250px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .descr{
+        font-size: 22px;
+        margin-bottom: 80px;
+    }
+
+    .learn-more{
+        padding-left: 70px;
+        padding-right: 70px;
+        color: white;
+    }
+}
+
+.expanding{
+    padding-top: 80px;
+    padding-bottom: 40px;
+
+    h2{
+        font-size: 44px;
+        font-family: "Micra";
+        margin-bottom: 0;
+    }
+
+    .numbers{
+        font-family: "Micra";
+        font-size: 22px;
+        color: #55d94a;
+        margin-top: 10px;
+    }
+
+    .nav-expanding{
+        display: flex;
+        justify-content: space-between;
+
+        a{
+            word-break: break-word;
+            font-size: 24px;
+            border-bottom: 2px solid #55d94a;
+            font-weight: 700;
+            padding: 5px 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        a:hover{
+            background: linear-gradient(#84e17c, #55d94a);
+            color: white;
+        }
+
+        a.active{
+            background: linear-gradient(#84e17c, #55d94a);
+            color: white;
+        }
+    }
+
+    .blocks{
+        margin-top: 50px;
+        .block{
+            background: white;
+            padding: 30px;
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+
+                li{
+                    width: 50%;
+                    margin-bottom: 20px;
+                    font-size: 24px;
+                    padding: 10px;
+                    font-weight: 500;
+                    position: relative;
+                    padding-left: 35px;
+                }
+
+                li::before{
+                    content: "";
+                    width: 25px;
+                    height: 3px;
+                    background: #55d94a;
+                    position: absolute;
+                    top: 23px;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+.upcoming-games{
+    padding-top: 40px;
+    padding-bottom: 70px;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 44px;
+        font-family: "Micra";
+        position: relative;
+        padding-bottom: 20px;
+        margin: 0;
+    }
+
+    h2:before{
+        content: "";
+        background: #55d94a;
+        height: 6px;
+        width: 250px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .navigation{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 80px;
+
+        .btns{
+            .btn{
+                margin-right: 30px;
+                padding: 20px 70px;
+            }
+        }
+
+        .filter{
+            font-size: 27px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .filter:before{
+            content: "";
+            width: 210px;
+            height: 3px;
+            background: #55d94a;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    .games{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 70px;
+
+        .game{
+            display: flex;
+            margin-top: 80px;
+
+            .img{
+                border: 3px solid #55d94a;
+                width: fit-content;
+                height: auto;
+                margin-left: 15px;
+            }
+
+            img{
+                transform: translate(-15px, -15px);
+            }
+
+            .descr{
+                width: 50%;
+                padding-left: 50px;
+
+                h3{
+                    font-size: 47px;
+                    font-family: "Micra";
+                    font-weight: 400;
+                    margin-top: 0;
+                }
+
+                p{
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+    .btn-learn-more{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 24px;
+    }
+}
+
+.special-guest{
+    background: black;
+    color: white;
+    padding-bottom: 50px;
+
+    .container{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    img{
+        width: 40%;
+    }
+
+    .descr{
+        width: 45%;
+        padding-top: 100px;
+
+        h3{
+            font-size: 45px;
+            font-family: "Micra";
+            color: #55d94a;
+        }
+
+        p{
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        .social{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+
+            p{
+                font-size: 19px;
+                color: #55d94a;
+                font-family: "Micra";
+            }
+        }
+
+        .social-icons{
+            display: flex;
+
+            .vk, .facebook, .instagram, .youtube, .telegram{
+                width: 23px;
+                height: 23px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                margin-right: 20px;
+                filter: invert(1);
+            }
+
+            .vk{
+                background-image: url(../images/icons/vk-social-network-logo.png);
+            }
+
+            .facebook{
+                background-image: url(../images/icons/facebook-app-symbol.png);
+            }
+
+            .instagram{
+                background-image: url(../images/icons/instagram.png);
+            }
+
+            .youtube{
+                background-image: url(../images/icons/youtube.png);
+            }
+
+            .telegram{
+                background-image: url(../images/icons/telegram.png);
+            }
+        }
+    }
+}
+
+.rating{
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 45px;
+        font-family: "Micra";
+    }
+
+    .numbers{
+        font-family: "Micra";
+        font-size: 22px;
+        color: #55d94a;
+        margin-top: 10px;
+    }
+
+    .table{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+
+        .name{
+            text-align: left;
+        }
+
+        .city{
+            text-align: center;
+        }
+
+        .scores{
+            text-align: right;
+        }
+
+        .table-titles{
+            display: flex;
+            justify-content: space-between;
+
+            .table-title{
+                font-size: 30px;
+                font-weight: 300;
+                width: 30%;
+            }
+
+            .num{
+                width: 10%;
+            }
+
+            .scores{
+                padding-right: 30px;
+            }
+        }
+
+        .row{
+            display: flex;
+            justify-content: space-between;
+
+            div{
+                width: 30%;
+                font-size: 45px;
+                font-weight: 600;
+                margin-top: 20px;
+            }
+
+            .num{
+                width: 10%;
+            }
+        }
+    }
+
+    .btn-learn-more{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 24px;
+    }
+}
+
+.gallary{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    h2{
+        font-size: 44px;
+        font-family: "Micra";
+        position: relative;
+        padding-bottom: 20px;
+        margin: 0;
+    }
+
+    h2:before{
+        content: "";
+        background: #55d94a;
+        height: 6px;
+        width: 250px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .images{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        .img{
+            width: 330px;
+            height: 180px;
+            background: #84e17c;
+        }
+    }
+}
+
+.history{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 44px;
+        font-family: "Micra";
+        width: 70%;
+    }
+
+    .numbers{
+        font-family: "Micra";
+        font-size: 22px;
+        color: #55d94a;
+        margin-top: 10px;
+    }
+
+    .carousel-history{
+        margin-bottom: 80px;
+
+        .carousel-item{
+            display: flex;
+
+            .descr{
+                padding-left: 50px;
+
+                h3{
+                    font-size: 55px;
+                    margin-bottom: 20px;
+                }
+
+                h4{
+                    font-size: 36px;
+                    color:#55d94a;
+                    margin: 0;
+                }
+
+                p{
+                    font-size: 27px;
+                }
+            }
+        }
+    }
+
+    .btn-prev.btn-carousel-history{
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        transform: rotate(180deg);
+    }
+
+    .btn-next.btn-carousel-history{
+        position: absolute;
+        top: 50%;
+        right: 50px;
+    }
+
+    .btn-carousel-history{
+        background: none;
+        border: none;
+        background-image: url(../images/icons/next.png);
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .btn-learn-more{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 24px;
+    }
+}
+
+.special-offers{
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    h2{
+        font-size: 44px;
+        font-family: "Micra";
+        position: relative;
+        padding-bottom: 20px;
+        margin: 0;
+        width: 70%;
+    }
+
+    h2:before{
+        content: "";
+        background: #55d94a;
+        height: 6px;
+        width: 250px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .carousel-offers{
+        margin-top: 50px;
+    }
+
+    .offer{
+        width: 500px;
+        height: 260px;
+        background: gray;
+    }
+}
+
+.subscription{
+    background: #000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    h2{
+        font-size: 44px;
+        font-family: "Micra";
+        color: white;
+        width: 70%;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+
+        input{
+            width: 50%;
+            font-size: 31px;
+            padding: 20px 50px;
+            background: #000;
+            border: 1px solid #55d94a;
+            color: white;
+        }
+
+        .btn.btn-bg{
+            width: fit-content;
+            color: black;
+            margin-top: 30px;
+            font-size: 24px;
+            font-weight: 600;
+            padding: 20px 50px;
+            height: auto;
+        }
+    }
+}
+
+footer{
+    background: #000;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+
+        a{
+            font-size: 24px;
+            width: 40%;
+        }
+    }
+
+    .btns{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .btn-bg{
+            color: black;
+        }
+    }
+
+    .social{
+        display: flex;
+        margin-top: 30px;
+
+        .vk, .facebook, .instagram, .youtube, .telegram{
+            width: 23px;
+            height: 23px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            margin-left: 20px;
+            filter: invert(100%);
+        }
+
+        .vk{
+            background-image: url(../images/icons/vk-social-network-logo.png);
+        }
+
+        .facebook{
+            background-image: url(../images/icons/facebook-app-symbol.png);
+        }
+
+        .instagram{
+            background-image: url(../images/icons/instagram.png);
+        }
+
+        .youtube{
+            background-image: url(../images/icons/youtube.png);
+        }
+
+        .telegram{
+            background-image: url(../images/icons/telegram.png);
+        }
+    }
+
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        .contacts{
+            .phone{
+                font-size: 19px;
+                position: relative;
+                padding-left: 30px;
+            }
+
+            .phone::before{
+                content: "";
+                width: 20px;
+                height: 20px;
+                background-image: url(../images/icons/phone.png);
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 4px;
+                left: 0;
+            }
+
+            .location{
+                font-size: 19px;
+                position: relative;
+                padding-left: 30px;
+                margin-left: 50px;
+            }
+
+            .location::before{
+                content: "";
+                width: 17px;
+                height: 23px;
+                background-image: url(../images/icons/location.png);
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 2px;
+                left: 0;
+            }
+        }
+
+        .info{
+            a{
+                font-size: 14px;
+                color: #55d94a;
+                margin-left: 50px;
+            }
+
+            .policy{
+                position: relative;
+                padding-left: 30px;
+            }
+
+            .policy::before{
+                content: "";
+                width: 23px;
+                height: 23px;
+                background-image: url(../images/icons/policy.png);
+                background-repeat: no-repeat;
+                position: absolute;
+                top: -2px;
+                left: 0;
+            }
+        }
+    }
+}
 
 @import 'responce';
