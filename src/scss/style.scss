@@ -178,7 +178,6 @@ header{
     .container{
         display: flex;
         flex-direction: column;
-        width: 65%;
         padding-top: 390px;
         color: white;
 
@@ -205,6 +204,7 @@ header{
             font-size: 34px;
             font-weight: 300;
             margin-top: 40px;
+            width: 65%;
         }
 
         .play-video{
