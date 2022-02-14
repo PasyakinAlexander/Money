@@ -263,6 +263,7 @@ header{
         position: relative;
         padding-bottom: 20px;
         margin: 0;
+        font-weight: 400;
     }
 
     h2:before{
@@ -282,6 +283,7 @@ header{
         p{
             margin: 0;
             padding-bottom: 50px;
+            font-weight: 300;
         }
     }
 
@@ -300,6 +302,7 @@ header{
         font-size: 44px;
         font-family: "Micra";
         margin-bottom: 0;
+        font-weight: 400;
     }
 
     .numbers{
@@ -308,6 +311,7 @@ header{
         color: #55d94a;
         margin-top: 30px;
         margin-bottom: 0;
+        font-weight: 400;
     }
 
     .nav-expanding{
@@ -320,7 +324,7 @@ header{
             word-break: break-word;
             font-size: 24px;
             border-bottom: 2px solid #55d94a;
-            font-weight: 700;
+            font-weight: 600;
             padding: 5px 15px;
             display: flex;
             align-items: center;
@@ -386,6 +390,7 @@ header{
         position: relative;
         padding-bottom: 30px;
         margin: 0;
+        font-weight: 400;
     }
 
     h2:before{
@@ -467,6 +472,7 @@ header{
                 p{
                     font-size: 40px;
                     margin-bottom: 50px;
+                    font-weight: 400;
                 }
             }
         }
@@ -503,6 +509,7 @@ header{
             font-family: "Micra";
             color: #55d94a;
             margin: 0;
+            font-weight: 400;
         }
 
         p{
@@ -523,6 +530,7 @@ header{
                 color: #55d94a;
                 font-family: "Micra";
                 margin: 0;
+                font-weight: 400;
             }
         }
 
@@ -576,6 +584,7 @@ header{
         font-size: 45px;
         font-family: "Micra";
         margin: 0;
+        font-weight: 400;
     }
 
     .numbers{
@@ -584,6 +593,7 @@ header{
         color: #55d94a;
         margin: 0;
         margin-top: 40px;
+        font-weight: 400;
     }
 
     .table{
@@ -656,6 +666,7 @@ header{
         position: relative;
         padding-bottom: 30px;
         margin: 0;
+        font-weight: 400;
     }
 
     h2:before{
@@ -695,6 +706,7 @@ header{
         font-family: "Micra";
         width: 70%;
         margin: 0;
+        font-weight: 400;
     }
 
     .numbers{
@@ -703,6 +715,7 @@ header{
         color: #55d94a;
         margin: 0;
         margin-top: 50px;
+        font-weight: 400;
     }
 
     .carousel-history{
@@ -744,6 +757,7 @@ header{
                 h3{
                     font-size: 55px;
                     margin: 0;
+                    font-weight: 600;
                 }
 
                 h4{
@@ -751,6 +765,7 @@ header{
                     color:#55d94a;
                     margin: 0;
                     margin-top: 30px;
+                    font-weight: 300;
                 }
 
                 p{
@@ -803,6 +818,7 @@ header{
         padding-bottom: 40px;
         margin: 0;
         width: 70%;
+        font-weight: 400;
     }
 
     h2:before{
@@ -836,6 +852,7 @@ header{
         color: white;
         width: 70%;
         margin: 0;
+        font-weight: 400;
     }
 
     form{
@@ -900,6 +917,7 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        font-weight: 500;
 
         .btn-bg{
             color: black;
