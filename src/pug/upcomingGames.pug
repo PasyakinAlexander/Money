@@ -2,13 +2,13 @@ section.upcoming-games
     .container 
         h2 Предстоящие игры
         .navigation
-            .btns.btn__switch__wrapper
-                button.btn__tab__switch.btn.active(target="1") Онлайн
-                button.btn__tab__switch.btn(target="2") Офлайн 
+            .btns.btn__switch__wrapper__games
+                button.btn__tab__switch__games.btn.active(target="online") Онлайн
+                button.btn__tab__switch__games.btn(target="offline") Офлайн 
             .filter 
                 a(href="") Фильтр городов 
-        .games.tab__viewer
-            .online.tab.active(tab-name="1") 
+        .games.tab__viewer__games
+            .tab-games.active(tab-name="online") 
                 .game 
                     .img
                         img(src="../assets/images/NizhniNovgorod.jpg", alt="")
@@ -33,7 +33,7 @@ section.upcoming-games
                         p Время: 15:00-18:00
                         p Свободно мест: 5
                         a(href="").btn.btn-bg Принять участие 
-            .offline.tab(tab-name="2") 
+            .tab-games(tab-name="offline") 
                 .game 
                     .img
                         img(src="../assets/images/NizhniNovgorod.jpg", alt="")

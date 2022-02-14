@@ -63,12 +63,19 @@
 
 /***Tabs***/
 
-.tab__viewer 
+.tab__viewer, .tab__viewer__games 
 {
     position: relative;
     transition: 0.5s;
 
     .tab:not(.active)
+    {
+        position: absolute;
+        top: 0;
+        display: none;
+    }
+
+    .tab-games:not(.active)
     {
         position: absolute;
         top: 0;

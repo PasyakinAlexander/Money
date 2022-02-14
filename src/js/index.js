@@ -5,6 +5,7 @@ function Core()
     SetTabSwitcher();
     SetModal();
     InitOwlCarousel();
+    SetTabSwitcherGames();
 }
 
 function InitOwlCarousel()
@@ -67,8 +68,47 @@ function SwitchTab(target)
         $(`[tab-name="${target}"]`).addClass('active');
         
         let tabHeight = $(`[tab-name="${target}"]`)[0].clientHeight;
-        console.log(tabHeight);
         $(`[tab-name="${target}"]`).closest('.tab__viewer').css('height', `${tabHeight}px`)
+
+        $(`[tab-name="${target}"]`).animate({
+            opacity: 1
+        }, 500)
+    })
+}
+
+function SetTabSwitcherGames()
+{
+    $('.btn__tab__switch__games').on('click', function(e) {
+        e.preventDefault();
+        if ($(this).hasClass('active'))
+        {
+            return;
+        }
+
+        $('.btn__tab__switch__games').removeClass('active');
+        $(this).addClass('active');
+
+        let targetTab = $(this).attr('target');
+        console.log(targetTab);
+
+        SwitchTabGames(targetTab)
+    })
+}
+
+function SwitchTabGames(target)
+{
+    
+    $('.tab-games.active').animate({
+        opacity: 0
+    }, 500, function() {
+        $('.tab-games.active').removeClass('active');
+
+        $(`[tab-name="${target}"]`).css('opacity', 0);
+        $(`[tab-name="${target}"]`).addClass('active');
+        
+        let tabHeight = $(`[tab-name="${target}"]`)[0].clientHeight;
+        console.log(tabHeight);
+        $(`[tab-name="${target}"]`).closest('.tab__viewer__games').css('height', `${tabHeight}px`)
 
         $(`[tab-name="${target}"]`).animate({
             opacity: 1
