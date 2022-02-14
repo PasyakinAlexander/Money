@@ -703,6 +703,10 @@ header{
         justify-content: space-between;
 
         .img{
+            width: 20%;
+        }
+
+        .img.plug{
             width: 330px;
             height: 180px;
             background: #84e17c;
@@ -744,14 +748,10 @@ header{
 
             .img{
                 width: 50%;
-                background: #dadada;
-                height: 500px;
                 display: flex;
                 position: relative;
 
                 img{
-                    width: 400px;
-                    height: 500px;
                     margin-left: auto;
                     margin-right: auto;
                 }
@@ -854,6 +854,10 @@ header{
     }
 
     .offer{
+        width: 30%;
+    }
+
+    .offer.plug{
         width: 500px;
         height: 260px;
         background: gray;
@@ -1302,6 +1306,100 @@ footer{
                 color: white;
             }
         }
+    }
+}
+
+.reviews{
+    padding-bottom: 370px;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 44px;
+        font-family: "Micra";
+        margin-bottom: 0;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 130px;
+    }
+
+    .numbers{
+        font-family: "Micra";
+        font-size: 22px;
+        color: #55d94a;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        font-weight: 400;
+    }
+
+    .review{
+        margin-top: 100px;
+
+        display: flex;
+
+        .img{
+            width: 50%;
+            background: #dadada;
+            height: 500px;
+            display: flex;
+            position: relative;
+
+            img{
+                width: 400px;
+                height: 500px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .play{
+                position: absolute;
+                bottom: 40px;
+                right: 50px;
+                width: 75px;
+                height: 75px;
+                border: none;
+                background: none;
+                background-image: url(../images/icons/playSmall.png);
+            }
+        }
+
+        .descr{
+            width: 50%;
+            padding-left: 60px;
+
+            h3{
+                font-size: 55px;
+                margin: 0;
+                font-weight: 600;
+            }
+
+            h4{
+                font-size: 36px;
+                color:#55d94a;
+                margin: 0;
+                margin-top: 30px;
+                font-weight: 300;
+            }
+
+            p{
+                font-size: 27px;
+                margin: 0;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .review:nth-child(even){
+        flex-direction: row-reverse;
+    }
+
+    .btn{
+        margin-top: 140px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

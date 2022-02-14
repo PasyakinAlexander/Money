@@ -1,0 +1,67 @@
+include pug/mixins.pug
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        include pug/head.pug
+    body
+        include pug/header.pug
+        +Header(false)
+        
+        section.reviews 
+            .container 
+                h2 Истории участников чемпионата
+                p.numbers 1/000/888 
+                .blocks
+                    .review
+                        .img
+                            img(src= "../assets/images/samodelkin.png", alt="")
+                            button.play
+                        .descr 
+                            h3 Алексей Самоделкин
+                            h4 Предприниматель
+                            p "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non pro ident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    
+                    .review
+                        .img
+                            img(src= "../assets/images/samodelkin.png", alt="")
+                            button.play
+                        .descr 
+                            h3 Алексей Самоделкин
+                            h4 Предприниматель
+                            p "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non pro ident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    
+                    .review
+                        .img
+                            img(src= "../assets/images/samodelkin.png", alt="")
+                            button.play
+                        .descr 
+                            h3 Алексей Самоделкин
+                            h4 Предприниматель
+                            p "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non pro ident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    
+                    .review 
+                        .img
+                            img(src= "../assets/images/samodelkin.png", alt="")
+                            button.play
+                        .descr 
+                            h3 Алексей Самоделкин
+                            h4 Предприниматель
+                            p "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non pro ident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    
+                    .review
+                        .img
+                            img(src= "../assets/images/samodelkin.png", alt="")
+                            button.play
+                        .descr 
+                            h3 Алексей Самоделкин
+                            h4 Предприниматель
+                            p "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non pro ident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                a(href="").btn.more-history Больше историй
+        include pug/footer.pug
+
+        include pug/scripts.pug

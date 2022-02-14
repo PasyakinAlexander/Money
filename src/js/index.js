@@ -30,6 +30,16 @@ function InitOwlCarousel()
         }
     );
 
+    var carousel_offers = $(".carousel-images").owlCarousel(
+        {
+            items: 4,
+            loop: true,
+            dots: false,
+            autoplay: true,
+            smartSpeed: 1000
+        }
+    );
+
     $('.btn-next.btn-carousel-history').click(function() {
         carousel_history.trigger('next.owl.carousel');
     });
