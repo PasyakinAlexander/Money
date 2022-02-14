@@ -1,0 +1,80 @@
+include pug/mixins.pug
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        include pug/head.pug
+    body
+        include pug/header.pug
+        +Header(true)
+        
+        section.create-history 
+            .container 
+                h1 Создай свою историю успеха
+                a(href="").btn.btn-bg Принять участие 
+        section.rating-full
+            .container 
+                h2 рейтинг игроков
+                p.numbers 1/000/888
+                .table 
+                    .table-titles
+                        .table-title.num
+                        .table-title.name имя/никнейм
+                        .table-title.city город
+                        .table-title.scores баллы
+                    .row 
+                        .num 1.
+                        .name Алексей
+                        .city Москва
+                        .scores 32.000
+                    .row 
+                        .num 2.
+                        .name Алексей
+                        .city Москва
+                        .scores 32.000
+                    .row 
+                        .num 3.
+                        .name Алексей
+                        .city Москва
+                        .scores 32.000
+                    .row 
+                        .num 4.
+                        .name Алексей
+                        .city Москва
+                        .scores 32.000
+                    .row 
+                        .num 5.
+                        .name Алексей
+                        .city Москва
+                        .scores 32.000
+                    .row 
+                        .num 6.
+                        .name Алексей
+                        .city Москва
+                        .scores 32.000
+                    .row 
+                        .num 7.
+                        .name Алексей
+                        .city Москва
+                        .scores 32.000
+                    .row 
+                        .num 8.
+                        .name Алексей
+                        .city Москва
+                        .scores 32.000
+        
+        include pug/history.pug
+        
+        section.take-part-section.black
+            .container 
+                h2 Покажи на что ты способен и забери приз!
+                p Создай свою историю успеха
+                a(href="").btn.btn-bg Принять участие
+        
+        include pug/footer.pug
+
+        include pug/scripts.pug

@@ -34,8 +34,6 @@ button, a, .btn
 }
 
 .btn{
-    /*width: 220px;
-    height: 55px;*/
     border: 2px solid #55d94a;
     text-align: center;
     padding: 10px;
@@ -590,7 +588,7 @@ header{
     }
 }
 
-.rating{
+.rating, .rating-full{
     padding-top: 190px;
     padding-bottom: 120px;
 
@@ -1400,11 +1398,122 @@ footer{
         margin-top: 140px;
         margin-left: auto;
         margin-right: auto;
+        width: 410px;
+        height: 85px;
+        font-size: 24px;
+        padding: 25px;
+        text-transform: uppercase;
     }
 }
 
-.take-part{
-    
+.take-part-section{
+    padding-bottom: 170px;
+    position: relative;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 44px;
+        font-family: "Micra";
+        font-weight: 400;
+        margin: 0;
+        width: 65%;
+    }
+
+    p{
+        margin: 0;
+        margin-top: 40px;
+        font-size: 40px;
+        font-weight: 300;
+    }
+
+    .btn{
+        margin-top: 45px;
+        width: 400px;
+        height: 70px;
+        font-size: 29px;
+        padding: 15px;
+    }
+}
+
+.take-part-section::after{
+    content: url(../images/backgrounds/backgroundTakePart.png);
+    position: absolute;
+    top: -200px;
+    right: 0;
+    z-index: -1;
+}
+
+.take-part-section.black{
+    background: #000;
+    margin-top: 160px;
+    padding-top: 220px;
+
+    h2, p{
+        color: white;
+    }
+
+    .btn{
+        color: black;
+    }
+
+    .btn:hover{
+        color: white;
+    }
+}
+
+.take-part-section.black::after{
+    content: "";
+    content: url(../images/backgrounds/backgroundTakePartDark.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.create-history{
+    padding-top: 450px;
+    background: #000000;
+    padding-bottom: 400px;
+    position: inherit;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1{
+        color: white;
+        font-size: 75px;
+        font-family: "Micra";
+        font-weight: 400;
+        margin: 0;
+        width: 65%;
+    }
+
+    .btn{
+        margin-top: 60px;
+        color: black;
+        font-weight: 500;
+        width: 330px;
+        height: 60px;
+        padding: 15px;
+    }
+
+    .btn:hover{
+        color: white;
+        font-size: 24px;
+    }
+}
+
+.create-history::after{
+    content: url(../images/cups.png);
+    position: absolute;
+    right: 0;
+    top: 300px;
 }
 
 @import 'responce';
