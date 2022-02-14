@@ -2,34 +2,60 @@ section.upcoming-games
     .container 
         h2 Предстоящие игры
         .navigation
-            .btns
-                a(href="").btn.btn-bg Онлайн
-                a(href="").btn Офлайн 
+            .btns.btn__switch__wrapper
+                button.btn__tab__switch.btn.active(target="1") Онлайн
+                button.btn__tab__switch.btn(target="2") Офлайн 
             .filter 
                 a(href="") Фильтр городов 
-        .games 
-            .game 
-                .img
-                    img(src="../assets/images/NizhniNovgorod.jpg", alt="")
-                .descr 
-                    h3 нижний новгород
-                    p Время: 15:00-18:00
-                    p Свободно мест: 5
-                    a(href="").btn.btn-bg Принять участие 
-            .game 
-                .img
-                    img(src="../assets/images/NizhniNovgorod.jpg", alt="")
-                .descr 
-                    h3 нижний новгород
-                    p Время: 15:00-18:00
-                    p Свободно мест: 5
-                    a(href="").btn.btn-bg Принять участие 
-            .game 
-                .img
-                    img(src="../assets/images/NizhniNovgorod.jpg", alt="")
-                .descr 
-                    h3 нижний новгород
-                    p Время: 15:00-18:00
-                    p Свободно мест: 5
-                    a(href="").btn.btn-bg Принять участие 
+        .games.tab__viewer
+            .online.tab.active(tab-name="1") 
+                .game 
+                    .img
+                        img(src="../assets/images/NizhniNovgorod.jpg", alt="")
+                    .descr 
+                        h3 нижний новгород
+                        p Время: 15:00-18:00
+                        p Свободно мест: 5
+                        a(href="").btn.btn-bg Принять участие 
+                .game 
+                    .img
+                        img(src="../assets/images/NizhniNovgorod.jpg", alt="")
+                    .descr 
+                        h3 нижний новгород
+                        p Время: 15:00-18:00
+                        p Свободно мест: 5
+                        a(href="").btn.btn-bg Принять участие 
+                .game 
+                    .img
+                        img(src="../assets/images/NizhniNovgorod.jpg", alt="")
+                    .descr 
+                        h3 нижний новгород
+                        p Время: 15:00-18:00
+                        p Свободно мест: 5
+                        a(href="").btn.btn-bg Принять участие 
+            .offline.tab(tab-name="2") 
+                .game 
+                    .img
+                        img(src="../assets/images/NizhniNovgorod.jpg", alt="")
+                    .descr 
+                        h3 нижний новгород
+                        p Время: 15:00-18:00
+                        p Свободно мест: 5
+                        a(href="").btn.btn-bg Принять участие 
+                .game 
+                    .img
+                        img(src="../assets/images/NizhniNovgorod.jpg", alt="")
+                    .descr 
+                        h3 нижний новгород
+                        p Время: 15:00-18:00
+                        p Свободно мест: 5
+                        a(href="").btn.btn-bg Принять участие 
+                .game 
+                    .img
+                        img(src="../assets/images/NizhniNovgorod.jpg", alt="")
+                    .descr 
+                        h3 нижний новгород
+                        p Время: 15:00-18:00
+                        p Свободно мест: 5
+                        a(href="").btn.btn-bg Принять участие 
         a(href="").btn.btn-learn-more Увидеть все

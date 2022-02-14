@@ -9,17 +9,17 @@ function Core()
 
 function InitOwlCarousel()
 {
-    var carousel_maintenance = $(".carousel-history").owlCarousel(
+    var carousel_history = $(".carousel-history").owlCarousel(
         {
             items: 1,
             loop: true,
             dots: false,
             autoplay: true,
-            smartSpeed: 1000
+            smartSpeed: 1000,
         }
     );
 
-    var carousel_maintenance = $(".carousel-offers").owlCarousel(
+    var carousel_offers = $(".carousel-offers").owlCarousel(
         {
             items: 3,
             loop: true,
@@ -30,10 +30,10 @@ function InitOwlCarousel()
     );
 
     $('.btn-next.btn-carousel-history').click(function() {
-        carousel_maintenance.trigger('next.owl.carousel');
+        carousel_history.trigger('next.owl.carousel');
     });
     $('.btn-prev.btn-carousel-history').click(function() {
-        carousel_maintenance.trigger('prev.owl.carousel', [1000]);
+        carousel_history.trigger('prev.owl.carousel', [1000]);
     });
 }
 
@@ -67,6 +67,7 @@ function SwitchTab(target)
         $(`[tab-name="${target}"]`).addClass('active');
         
         let tabHeight = $(`[tab-name="${target}"]`)[0].clientHeight;
+        console.log(tabHeight);
         $(`[tab-name="${target}"]`).closest('.tab__viewer').css('height', `${tabHeight}px`)
 
         $(`[tab-name="${target}"]`).animate({

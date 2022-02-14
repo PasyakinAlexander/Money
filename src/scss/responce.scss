@@ -4,6 +4,75 @@
     {
         max-width: 1200px;
     }
+
+    header{
+        .menu{
+            .nav{
+                a{
+                    font-size: 18px;
+                }
+            }
+
+            .logo{
+                img{
+                    width: 200px;
+                }
+            }
+
+            .btns{
+                .btn{
+                    font-size: 14px;
+                    width: auto;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .federal-championship .content{
+        padding-right: 10%;
+    }
+
+    .expanding .nav-expanding button{
+        font-size: 18px;
+    }
+
+    .expanding .blocks .block{
+        padding: 50px 30px;
+    }
+
+    .upcoming-games .games .game .descr{
+        padding-left: 20px;
+
+        p{
+            font-size: 36px;
+        }
+    }
+
+    .special-guest img{
+        width: 50%;
+    }
+
+    .gallary .images .img{
+        width: 250px;
+    }
+
+    .history h2{
+        width: 100%;
+    }
+
+    .special-offers .offer{
+        width: 380px;
+    }
+
+    footer .menu a{
+        font-size: 18px;
+    }
+
+    footer .btns .btn{
+        font-size: 18px;
+        width: 200px;
+    }
 }
 
 @media(max-width: 1200px)

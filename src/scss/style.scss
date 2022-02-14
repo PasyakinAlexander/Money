@@ -34,8 +34,8 @@ button, a, .btn
 }
 
 .btn{
-    width: 220px;
-    height: 55px;
+    /*width: 220px;
+    height: 55px;*/
     border: 2px solid #55d94a;
     text-align: center;
     padding: 10px;
@@ -57,13 +57,10 @@ button, a, .btn
 }
 
 header{
-    background: url(../images/backgrounds/header-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
     color: #ececec;
-    padding-top: 50px;
-    padding-bottom: 200px;
+    padding-top: 60px;
+    position: absolute;
+    width: 100%;
 
     .container{
         display: flex;
@@ -142,6 +139,8 @@ header{
             width: 23px;
             height: 23px;
             background-image: url(../images/icons/menu-btn.png);
+            border: none;
+            cursor: pointer;
         }
 
         .nav{
@@ -157,17 +156,30 @@ header{
         .btns{
             display: flex;
 
+            .btn{
+                width: 220px;
+                height: 55px;
+            }
+
             .personal-account{
                 margin-left: 20px;
             }
         }
     }
+}
 
-    .descr{
+.main-block{
+    background: url(../images/backgrounds/header-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-bottom: 200px;
+
+    .container{
         display: flex;
         flex-direction: column;
         width: 65%;
-        margin-top: 150px;
+        padding-top: 390px;
         color: white;
 
         h1{
@@ -175,7 +187,7 @@ header{
             margin: 0;
             font-weight: 400;
             position: relative;
-            padding-bottom: 40px;
+            padding-bottom: 30px;
             font-family: "Micra";
         }
 
@@ -192,17 +204,18 @@ header{
             margin: 0;
             font-size: 34px;
             font-weight: 300;
-            margin-top: 30px;
+            margin-top: 40px;
         }
 
         .play-video{
             display: flex;
-            margin-top: 100px;
+            margin-top: 70px;
             align-items: center;
 
             .btn{
                 width: 150px;
                 height: 150px;
+                background: none;
                 background-image: url(../images/icons/play.png);
                 border: none;
             }
@@ -214,6 +227,7 @@ header{
                 text-align: center;
                 font-weight: 300;
                 margin-left: 20px;
+                text-align: left;
 
                 .see-video{
                     font-size: 18px;
@@ -229,15 +243,15 @@ header{
 .running-line{
     font-size: 50px;
     font-family: "Micra";
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     text-transform: uppercase;
 }
 
 .federal-championship{
 
     .content{
-        background-image: url(../images/backgrounds/federalChempionship-background.jpg);
+        background-image: url(../images/backgrounds/federalChempionship-background.png);
         background-repeat: no-repeat;
         background-position: right;
         padding-right: 30%;
@@ -247,7 +261,7 @@ header{
         font-family: "Micra";
         font-size: 44px;
         position: relative;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         margin: 0;
     }
 
@@ -262,7 +276,13 @@ header{
 
     .descr{
         font-size: 22px;
-        margin-bottom: 80px;
+        padding-bottom: 70px;
+        padding-top: 60px;
+
+        p{
+            margin: 0;
+            padding-bottom: 50px;
+        }
     }
 
     .learn-more{
@@ -273,7 +293,7 @@ header{
 }
 
 .expanding{
-    padding-top: 80px;
+    padding-top: 150px;
     padding-bottom: 40px;
 
     h2{
@@ -286,14 +306,17 @@ header{
         font-family: "Micra";
         font-size: 22px;
         color: #55d94a;
-        margin-top: 10px;
+        margin-top: 30px;
+        margin-bottom: 0;
     }
 
     .nav-expanding{
         display: flex;
         justify-content: space-between;
+        margin-top: 80px;
 
-        a{
+        button{
+            border: none;
             word-break: break-word;
             font-size: 24px;
             border-bottom: 2px solid #55d94a;
@@ -303,22 +326,22 @@ header{
             align-items: center;
         }
 
-        a:hover{
+        button:hover{
             background: linear-gradient(#84e17c, #55d94a);
             color: white;
         }
 
-        a.active{
+        button.active{
             background: linear-gradient(#84e17c, #55d94a);
             color: white;
         }
     }
 
     .blocks{
-        margin-top: 50px;
+        margin-top: 40px;
         .block{
             background: white;
-            padding: 30px;
+            padding: 90px 70px;
             ul{
                 display: flex;
                 flex-wrap: wrap;
@@ -349,8 +372,8 @@ header{
 }
 
 .upcoming-games{
-    padding-top: 40px;
-    padding-bottom: 70px;
+    padding-top: 150px;
+    padding-bottom: 130px;
 
     .container{
         display: flex;
@@ -361,7 +384,7 @@ header{
         font-size: 44px;
         font-family: "Micra";
         position: relative;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
         margin: 0;
     }
 
@@ -375,15 +398,21 @@ header{
     }
 
     .navigation{
-        margin-top: 40px;
+        margin-top: 50px;
         display: flex;
         justify-content: space-between;
-        padding-bottom: 80px;
+        padding-bottom: 10px;
 
         .btns{
             .btn{
-                margin-right: 30px;
+                margin-right: 70px;
                 padding: 20px 70px;
+            }
+
+            .btn.active{
+                background: linear-gradient(#84e17c, #55d94a);
+                border: none;
+                color: white;
             }
         }
 
@@ -407,11 +436,10 @@ header{
     .games{
         display: flex;
         flex-direction: column;
-        margin-bottom: 70px;
 
         .game{
             display: flex;
-            margin-top: 80px;
+            margin-top: 140px;
 
             .img{
                 border: 3px solid #55d94a;
@@ -432,11 +460,13 @@ header{
                     font-size: 47px;
                     font-family: "Micra";
                     font-weight: 400;
-                    margin-top: 0;
+                    margin: 0;
+                    margin-bottom: 70px
                 }
 
                 p{
                     font-size: 40px;
+                    margin-bottom: 50px;
                 }
             }
         }
@@ -446,13 +476,14 @@ header{
         margin-left: auto;
         margin-right: auto;
         font-size: 24px;
+        margin-top: 120px;
     }
 }
 
 .special-guest{
     background: black;
     color: white;
-    padding-bottom: 50px;
+    padding-bottom: 200px;
 
     .container{
         display: flex;
@@ -465,33 +496,39 @@ header{
 
     .descr{
         width: 45%;
-        padding-top: 100px;
+        padding-top: 190px;
 
         h3{
             font-size: 45px;
             font-family: "Micra";
             color: #55d94a;
+            margin: 0;
         }
 
         p{
             font-size: 25px;
             font-weight: 500;
+            margin: 0;
+            margin-top: 40px;
         }
 
         .social{
             display: flex;
             flex-direction: column;
             width: 60%;
+            margin-top: 140px;
 
             p{
                 font-size: 19px;
                 color: #55d94a;
                 font-family: "Micra";
+                margin: 0;
             }
         }
 
         .social-icons{
             display: flex;
+            margin-top: 40px;
 
             .vk, .facebook, .instagram, .youtube, .telegram{
                 width: 23px;
@@ -527,8 +564,8 @@ header{
 }
 
 .rating{
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 190px;
+    padding-bottom: 120px;
 
     .container{
         display: flex;
@@ -538,19 +575,21 @@ header{
     h2{
         font-size: 45px;
         font-family: "Micra";
+        margin: 0;
     }
 
     .numbers{
         font-family: "Micra";
         font-size: 22px;
         color: #55d94a;
-        margin-top: 10px;
+        margin: 0;
+        margin-top: 40px;
     }
 
     .table{
         display: flex;
         flex-direction: column;
-        margin-bottom: 100px;
+        margin-top: 140px;
 
         .name{
             text-align: left;
@@ -586,12 +625,12 @@ header{
         .row{
             display: flex;
             justify-content: space-between;
+            margin-top: 70px;
 
             div{
                 width: 30%;
                 font-size: 45px;
                 font-weight: 600;
-                margin-top: 20px;
             }
 
             .num{
@@ -604,18 +643,18 @@ header{
         margin-left: auto;
         margin-right: auto;
         font-size: 24px;
+        margin-top: 120px;
     }
 }
 
 .gallary{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 200px;
 
     h2{
         font-size: 44px;
         font-family: "Micra";
         position: relative;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
         margin: 0;
     }
 
@@ -629,7 +668,7 @@ header{
     }
 
     .images{
-        margin-top: 50px;
+        margin-top: 100px;
         display: flex;
         justify-content: space-between;
 
@@ -643,7 +682,7 @@ header{
 
 .history{
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 190px;
     position: relative;
     
     .container{
@@ -655,37 +694,69 @@ header{
         font-size: 44px;
         font-family: "Micra";
         width: 70%;
+        margin: 0;
     }
 
     .numbers{
         font-family: "Micra";
         font-size: 22px;
         color: #55d94a;
-        margin-top: 10px;
+        margin: 0;
+        margin-top: 50px;
     }
 
     .carousel-history{
-        margin-bottom: 80px;
+        margin-top: 80px;
 
         .carousel-item{
             display: flex;
 
+            .img{
+                width: 50%;
+                background: #dadada;
+                height: 500px;
+                display: flex;
+                position: relative;
+
+                img{
+                    width: 400px;
+                    height: 500px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                .play{
+                    position: absolute;
+                    bottom: 40px;
+                    right: 50px;
+                    width: 75px;
+                    height: 75px;
+                    border: none;
+                    background: none;
+                    background-image: url(../images/icons/playSmall.png);
+                }
+            }
+
             .descr{
-                padding-left: 50px;
+                width: 50%;
+                padding-left: 60px;
 
                 h3{
                     font-size: 55px;
-                    margin-bottom: 20px;
+                    margin: 0;
                 }
 
                 h4{
                     font-size: 36px;
                     color:#55d94a;
                     margin: 0;
+                    margin-top: 30px;
                 }
 
                 p{
                     font-size: 27px;
+                    margin: 0;
+                    margin-top: 30px;
                 }
             }
         }
@@ -718,18 +789,18 @@ header{
         margin-left: auto;
         margin-right: auto;
         font-size: 24px;
+        margin-top: 90px;
     }
 }
 
 .special-offers{
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 260px;
 
     h2{
         font-size: 44px;
         font-family: "Micra";
         position: relative;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
         margin: 0;
         width: 70%;
     }
@@ -744,7 +815,7 @@ header{
     }
 
     .carousel-offers{
-        margin-top: 50px;
+        margin-top: 70px;
     }
 
     .offer{
@@ -756,19 +827,21 @@ header{
 
 .subscription{
     background: #000;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 160px;
+    padding-bottom: 100px;
 
     h2{
         font-size: 44px;
         font-family: "Micra";
         color: white;
         width: 70%;
+        margin: 0;
     }
 
     form{
         display: flex;
         flex-direction: column;
+        margin-top: 50px;
 
         input{
             width: 50%;
@@ -782,7 +855,7 @@ header{
         .btn.btn-bg{
             width: fit-content;
             color: black;
-            margin-top: 30px;
+            margin-top: 50px;
             font-size: 24px;
             font-weight: 600;
             padding: 20px 50px;
@@ -794,8 +867,8 @@ header{
 footer{
     background: #000;
     color: white;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 200px;
 
     .container{
         display: flex;
@@ -835,7 +908,7 @@ footer{
 
     .social{
         display: flex;
-        margin-top: 30px;
+        margin-top: 20px;
 
         .vk, .facebook, .instagram, .youtube, .telegram{
             width: 23px;
@@ -871,7 +944,7 @@ footer{
     .bottom{
         display: flex;
         justify-content: space-between;
-        margin-top: 50px;
+        margin-top: 150px;
 
         .contacts{
             .phone{
