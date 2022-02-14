@@ -1,0 +1,94 @@
+section.lk
+    .container 
+        .personal-data 
+            p.name Личный кабинет: 
+                span Алексей Владимирович 
+            p.position Место в рейтинге: 
+                span 786
+        .yours-games.btn__switch__wrapper
+            button.btn.btn__tab__switch(target="personal-data") Личные данные 
+            button.btn.btn__tab__switch.active(target="upcoming-games") Предстоящие игры
+            button.btn.btn__tab__switch(target="history-games") История игр
+            button.btn.btn__tab__switch(target="personal-rating") Личный рейтинг
+        .blocks.tab__viewer 
+            .block.tab(tab-name="personal-data") 
+                h2 Ваши личные данные:
+            .block.tab.active(tab-name="upcoming-games") 
+                h2 Ваши предстоящие игры:
+                .btns.btn__switch__wrapper__games
+                    button.btn__tab__switch__games.btn.active(target="online") Онлайн
+                    button.btn__tab__switch__games.btn(target="offline") Офлайн 
+                .tab__viewer__games 
+                    .tab-games.active(tab-name="online")
+                        .games
+                            .game 
+                                .img 
+                                p Квалификационная игра
+                                p Время проведения: 15:00-18:00
+                                .btns 
+                                    a(href="").btn.btn-bg Перейти в игру
+                                    a(href="").btn Изменить дату и время
+                            .game 
+                                .img 
+                                p Квалификационная игра
+                                p Время проведения: 15:00-18:00
+                                .btns 
+                                    a(href="").btn.btn-bg Перейти в игру
+                                    a(href="").btn Изменить дату и время
+                    .tab-games(tab-name="offline") 
+                        .games
+                            .game 
+                                .img 
+                                p Квалификационная игра
+                                p Время проведения: 15:00-18:00
+                                .btns 
+                                    a(href="").btn.btn-bg Перейти в игру
+                                    a(href="").btn Изменить дату и время
+                            .game 
+                                .img 
+                                p Квалификационная игра
+                                p Время проведения: 15:00-18:00
+                                .btns 
+                                    a(href="").btn.btn-bg Перейти в игру
+                                    a(href="").btn Изменить дату и время
+            .block.tab(tab-name="history-games") 
+                h2 Ваша история игр:
+            .block.personal-rating.tab(tab-name="personal-rating") 
+                h2 Личный рейтинг
+                h3.scores-title Всего баллов: 32 000
+                h3 Масто в общем рейтинге: 786
+                .table 
+                    .table-titles 
+                        .table-title.date Дата
+                        .table-title.players Кол-во игроков
+                        .table-title.position Ваше место
+                        .table-title.scores Кол-во баллов
+                        .table-title.see 
+                    .row
+                        .col.date 10.11.2021
+                        .col.players 6 человек
+                        .col.position 1 место
+                        .col.scores 100
+                        .col.see
+                            a(href="").btn.btn-bg Смотреть игру
+                    .row
+                        .col.date 19.11.2021
+                        .col.players 5 человек
+                        .col.position 2 место
+                        .col.scores 70
+                        .col.see
+                            a(href="").btn.btn-bg Смотреть игру
+                    .row
+                        .col.date 25.11.2021
+                        .col.players 3 человека
+                        .col.position 1 место
+                        .col.scores 100
+                        .col.see
+                            a(href="").btn.btn-bg Смотреть игру
+                    .row
+                        .col.date 12.12.2021
+                        .col.players 6 человек
+                        .col.position 2 место
+                        .col.scores 70
+                        .col.see
+                            a(href="").btn.btn-bg Смотреть игру

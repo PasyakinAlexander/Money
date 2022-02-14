@@ -1,24 +1,52 @@
-header 
-    .container 
-        .contacts 
-            .phone 
-                a(href="tel:+71234567890") +7 (123) 456-78-90
-            .social 
-                a.vk(href="https://vk.com/")
-                a.facebook(href="https://www.facebook.com/")
-                a.instagram(href="https://www.instagram.com/") 
-                a.youtube(href="https://www.youtube.com/")
-                a.telegram(href="https://telegram.org/")
-        .menu 
-            .menu-btn
-            a(href="").logo 
-                img(src="/assets/images/logo.png", alt="")
-            .nav 
-                a(href="") Чемпионат
-                a(href="") Призы
-                a(href="") Рейтинг
-                a(href="") Корпоративные игры
-                a(href="") Контакты
-            .btns 
-                a(href="").btn.take-part.btn-bg Принять участие
-                a(href="").btn.personal-account Личный кабинет
+mixin Header(mainPage)
+    if mainPage == true
+        header 
+            .container 
+                .contacts 
+                    .phone 
+                        a(href="tel:+71234567890") +7 (123) 456-78-90
+                    .social 
+                        a.vk(href="https://vk.com/")
+                        a.facebook(href="https://www.facebook.com/")
+                        a.instagram(href="https://www.instagram.com/") 
+                        a.youtube(href="https://www.youtube.com/")
+                        a.telegram(href="https://telegram.org/")
+                .menu 
+                    .menu-btn
+                    a(href="index.html").logo 
+                        img(src="/assets/images/logo.png", alt="")
+                    .nav 
+                        a(href="") Чемпионат
+                        a(href="") Призы
+                        a(href="") Рейтинг
+                        a(href="") Корпоративные игры
+                        a(href="") Контакты
+                    .btns 
+                        a(href="").btn.take-part.btn-bg Принять участие
+                        a(href="lk.html").btn.personal-account Личный кабинет
+    else 
+        header.light-header
+            .container 
+                .contacts 
+                    .phone 
+                        a(href="tel:+71234567890") +7 (123) 456-78-90
+                    .social 
+                        a.vk(href="https://vk.com/")
+                        a.facebook(href="https://www.facebook.com/")
+                        a.instagram(href="https://www.instagram.com/") 
+                        a.youtube(href="https://www.youtube.com/")
+                        a.telegram(href="https://telegram.org/")
+                .menu 
+                    .menu-btn
+                    a(href="index.html").logo 
+                        img(src="/assets/images/logo.png", alt="")
+                    .nav 
+                        a(href="") Чемпионат
+                        a(href="") Призы
+                        a(href="") Рейтинг
+                        a(href="") Корпоративные игры
+                        a(href="") Контакты
+                    .btns 
+                        a(href="").btn.take-part.btn-bg Принять участие
+                        a(href="lk.html").btn.personal-account Личный кабинет
+            

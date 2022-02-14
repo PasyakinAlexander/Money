@@ -168,6 +168,25 @@ header{
     }
 }
 
+.light-header{
+    color: black;
+    position: inherit;
+
+    .contacts{
+        .social{
+            .vk, .facebook, .instagram, .youtube, .telegram{
+                filter: invert(0);
+            }
+        }
+    }
+
+    .menu{
+        .menu-btn, .logo{
+            filter: invert(100%);
+        }
+    }
+}
+
 .main-block{
     background: url(../images/backgrounds/header-background.jpg);
     background-repeat: no-repeat;
@@ -693,7 +712,6 @@ header{
 
 .history{
     padding-top: 50px;
-    padding-bottom: 190px;
     position: relative;
     
     .container{
@@ -810,6 +828,7 @@ header{
 
 .special-offers{
     padding-bottom: 260px;
+    padding-top: 190px;
 
     h2{
         font-size: 44px;
@@ -1022,6 +1041,265 @@ footer{
                 position: absolute;
                 top: -2px;
                 left: 0;
+            }
+        }
+    }
+}
+
+.lk{
+    padding-top: 60px;
+
+    .personal-data{
+        display: flex;
+        justify-content: space-between;
+
+        p{
+            font-size: 24px;
+
+            span{
+                border-bottom: 2px solid #55d94a;
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    .yours-games{
+        margin-top: 45px;
+        display: flex;
+        justify-content: space-between;
+
+        .btn{
+            width: 330px;
+            height: 75px;
+        }
+
+        .btn.active{
+            background: linear-gradient(#84e17c, #55d94a);
+            border: none;
+            padding: 12px;
+            color: white;
+        }
+    }
+
+    .blocks{
+        margin-top: 120px;
+
+        .block{
+            padding-bottom: 100px;
+
+            h2{
+                margin: 0;
+                font-size: 44px;
+                font-family: "Micra";
+                font-weight: 400;
+            }
+        }
+
+        .btn__switch__wrapper__games{
+            margin-top: 90px;
+            display: flex;
+            justify-content: center;
+
+            .btn:first-child{
+                margin-right: 35px;
+            }
+
+            .btn{
+                width: 215px;
+                height: 60px;
+            }
+
+            .btn.active{
+                background: linear-gradient(#84e17c, #55d94a);
+                border: none;
+                padding: 12px;
+                color: white;
+            }
+        }
+
+        .tab__viewer__games {
+            margin-top: 75px;
+
+            .tab-games{
+                .games{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+
+                    .game{
+                        .img{
+                            width: 575px;
+                            height: 340px;
+                            background: #dbdbdb;
+                            margin-bottom: 30px;
+                        }
+
+                        p{
+                            margin: 0;
+                            margin-bottom: 40px;
+                            font-size: 36px;
+                            font-weight: 500;
+                        }
+
+                        .btns{
+                            display: flex;
+                            flex-direction: column;
+
+                            .btn{
+                                width: 370px;
+                                height: 80px;
+                                font-size: 26px;
+                                padding: 25px;
+                                margin-top: 25px;
+                            }
+
+                            .btn-bg{
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .personal-rating{
+            h2{
+                margin-bottom: 130px;
+            }
+
+            h3{
+                margin: 0;
+                width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 43px;
+                font-weight: 700;
+                margin-top: 40px;
+            }
+
+            .scores-title{
+                position: relative;
+                padding-bottom: 40px;
+            }
+
+            .scores-title::before{
+                content: "";
+                width: 580px;
+                height: 4px;
+                position: absolute;
+                bottom: 0;
+                left: -68px;
+                background-color: #55d94a;
+            }
+
+            .table{
+                margin-top: 200px;
+                display: flex;
+                flex-direction: column;
+
+                .table-titles{
+                    display: flex;
+                    font-size: 30px;
+                    font-weight: 300;
+                    justify-content: space-between;
+                    margin-bottom: 50px;
+
+                    .table-title{
+                        width: 20%;
+                    }
+
+                    .see{
+                        width: 220px;
+                        text-align: right;
+                    }
+                }
+
+                .row{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 50px;
+                    font-size: 34px;
+
+                    .col{
+                        width: 20%;
+                    }
+
+                    .see{
+                        width: 220px;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.more-features{
+    background: #020301;
+    padding-top: 160px;
+    padding-bottom: 170px;
+
+    .container{
+        display: flex;
+    }
+
+    .descr{
+        color: white;
+        padding-left: 120px;
+
+        h2{
+            margin: 0;
+            font-size: 32px;
+            font-family: "Micra";
+            font-weight: 400;
+
+            span{
+                color:#55d94a;
+            }
+        }
+
+        ul{
+            margin: 0;
+            margin-top: 60px;
+            list-style: none;
+            padding: 0;
+
+            li{
+                font-size: 35px;
+                position: relative;
+                padding-left: 75px;
+            }
+
+            li::before{
+                content: "";
+                width: 45px;
+                height: 4px;
+                background-color: #55d94a;
+                position: absolute;
+                left: 0;
+                top: 20px;
+            }
+        }
+
+        .btns{
+            display: flex;
+            margin-top: 70px;
+
+            .btn{
+                width: 315px;
+                height: 70px;
+                font-size: 25px;
+                padding: 15px;
+                font-weight: 500;
+            }
+
+            .btn-bg{
+                color: #000;
+                margin-right: 50px;
+            }
+
+            .btn-bg:hover{
+                color: white;
             }
         }
     }

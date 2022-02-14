@@ -89,7 +89,6 @@ function SetTabSwitcherGames()
         $(this).addClass('active');
 
         let targetTab = $(this).attr('target');
-        console.log(targetTab);
 
         SwitchTabGames(targetTab)
     })
@@ -107,7 +106,6 @@ function SwitchTabGames(target)
         $(`[tab-name="${target}"]`).addClass('active');
         
         let tabHeight = $(`[tab-name="${target}"]`)[0].clientHeight;
-        console.log(tabHeight);
         $(`[tab-name="${target}"]`).closest('.tab__viewer__games').css('height', `${tabHeight}px`)
 
         $(`[tab-name="${target}"]`).animate({

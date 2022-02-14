@@ -10,18 +10,12 @@ html(lang="ru")
         include pug/head.pug
     body
         include pug/header.pug
-        +Header(true)
-        include pug/mainBlock.pug
-        include pug/runningLine.pug
-        include pug/federalChampionship.pug
-        include pug/expanding.pug
-        include pug/upcomingGames.pug
-        include pug/specialGuest.pug
-        include pug/rating.pug
-        include pug/gallary.pug
-        include pug/history.pug
+        +Header(false)
+        
+        include pug/lknav.pug
+        include pug/moreFeatures.pug
         include pug/specialOffers.pug
-        include pug/subscribtion.pug
+        
         include pug/footer.pug
 
         include pug/scripts.pug
